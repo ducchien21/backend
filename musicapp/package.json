@@ -63,16 +63,15 @@
   "jest": {
     "moduleFileExtensions": [
       "js",
-      "json",
-      "ts"
+      "json"  
     ],
     "rootDir": "src",
-    "testRegex": ".*\\.spec\\.ts$",
+    "testRegex": ".*\\.spec\\.js$",
     "transform": {
-      "^.+\\.(t|j)s$": "ts-jest"
+      "^.+\\.(t|j)s$": "babel-jest"
     },
     "collectCoverageFrom": [
-      "**/*.(t|j)s"
+      "**/*.js"
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
